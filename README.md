@@ -1,4 +1,4 @@
-# Huryle code style guide
+# Hyrule code style guide
 
 This guide is not related to Nintendo of The Legend of Zelda.
 
