@@ -1,6 +1,4 @@
-# Hyrule code style guide
-
-(No, is not related to Nintendo or Legend of Zelda)
+# Link styling style guide
 
 This guide relies on human-focused class names, the idea is to use class names that a human can understand at first sight and avoid confusion on what does or how to use a class name.
 
@@ -15,6 +13,7 @@ This guide relies on human-focused class names, the idea is to use class names t
       - [Dirty](#dirty)
       - [Multiple states with same styling](#multiple-states-with-same-styling)
   - [Utilities](#utilities)
+  - [Add suggestions](#add-suggestions)
 
 <!-- /TOC -->
 
@@ -152,3 +151,7 @@ i.e:
 .aria-hidden { /* ... */ }
 .hidden { /* ... */ }
 ```
+
+## Add suggestions
+
+This is a personal project and a live guide, if you have suggestions on how to improve it, please [open a issue](/issues/new) to discuss it or [send a pull request](/compare).
