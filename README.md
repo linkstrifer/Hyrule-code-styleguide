@@ -13,7 +13,7 @@ This guide relies on human-focused class names, the idea is to use class names t
       - [Dirty](#dirty)
       - [Multiple states with same styling](#multiple-states-with-same-styling)
   - [Utilities](#utilities)
-  - [Add suggestions](#add-suggestions)
+  - [Contribute](#contribute)
 
 <!-- /TOC -->
 
@@ -152,6 +152,6 @@ i.e:
 .hidden { /* ... */ }
 ```
 
-## Add suggestions
+## Contribute
 
-This is a personal project and a live guide, if you have suggestions on how to improve it, please [open a issue](/issues/new) to discuss it or [send a pull request](/compare).
+This is a personal project and a live guide, if you have suggestions on how to improve it, please [open a issue](https://github.com/linkstrifer/Hyrule-code-styleguide/issues/new) to discuss it or [send a pull request](https://github.com/linkstrifer/Hyrule-code-styleguide/compare).
