@@ -1,5 +1,7 @@
 # Hyrule code style guide
 
+Code like a Hero (not really but sounds really cool).
+
 This guide is not related to Nintendo of The Legend of Zelda.
 
 This guide relies on human-focused class names, the idea is to use class names that a human can understand at first sight and avoid confusion on what does or how to use a class name.
