@@ -34,21 +34,21 @@ Note that this syntax is using kebab naming convention.
 Let's say we need to create a search box:
 
 ```css
-.Search-box { /* ... */ }
+.search-box { /* ... */ }
 
-.Search-box-input { /* ... */ }
+.search-box-input { /* ... */ }
 
-.Search-box-icon { /* ... */ }
+.search-box-icon { /* ... */ }
 ```
 
-Note that `Search-box` is the component name, It is has meaning for humans (machines don't care), component names can have multiple words so the idea is to use kebab case always, component names starts with uppercase to differentiate it from utilities.
+Note that `search-box` is the component name, It is has meaning for humans (machines don't care), component names can have multiple words so the idea is to use kebab case always, component names starts with uppercase to differentiate it from utilities.
 
 Our HTML will look like this:
 
 ```html
-<label class="Search-box">
-  <input class="Search-box-input" type="text" />
-  <img class="Search-box-icon" />
+<label class="search-box">
+  <input class="search-box-input" type="text" />
+  <img class="search-box-icon" />
 </label>
 ```
 
@@ -61,17 +61,17 @@ Syntax: `.is-[<variation>]`
 i.e: Let's use a button as an example, buttons are one of the components with the most variations in a website, normally we need to change size and button type (primary, secondary, with-icon):
 
 ```css
-.Button { /* ... */ }
+.button { /* ... */ }
 
-.Button.is-primary { /* ... */ }
+.button.is-primary { /* ... */ }
 
-.Button.is-big { /* ... */ }
+.button.is-big { /* ... */ }
 ```
 
 And our HTML will look like this:
 
 ```html
-<button class="Button is-primary is-big" ></button>
+<button class="button is-primary is-big" ></button>
 ```
 
 This is highly composable and verbose, is similar to BEM but without the word Button on every class, this will generate less CSS and HTML, also will maintain the HTML cleaner, so win/win.
@@ -89,16 +89,16 @@ Using the search box again, let's say we need to add some states (disabled, dirt
 Disabled is a native state so we are going to use the `disabled` attribute:
 
 ```HTML
-<label class="Search-box">
-  <input class="Search-box-input" type="text" disabled/>
-  <img class="Search-box-icon" />
+<label class="search-box">
+  <input class="search-box-input" type="text" disabled/>
+  <img class="search-box-icon" />
 </label>
 ```
 
 Same in the CSS:
 
 ```css
-.Search-box-input:disabled { /* ... */ }
+.search-box-input:disabled { /* ... */ }
 ```
 
 #### Dirty
@@ -106,16 +106,16 @@ Same in the CSS:
 Dirty is not a native state, here we can use `data-dirty`, there is no need to pass a value for boolean attributes:
 
 ```HTML
-<label class="Search-box">
-  <input class="Search-box-input" type="text" data-dirty/>
-  <img class="Search-box-icon" />
+<label class="search-box">
+  <input class="search-box-input" type="text" data-dirty/>
+  <img class="search-box-icon" />
 </label>
 ```
 
 So in CSS we have the attribute selector, why not use it?
 
 ```css
-.Search-box-input[data-dirty] { /* ... */ }
+.search-box-input[data-dirty] { /* ... */ }
 ```
 
 #### Multiple states with same styling
@@ -129,12 +129,12 @@ Sometimes we need the same styling in multiple states, normally we achieve this 
 Back to our search box component, let's say that our `dirty` and `valid` states share some properties but `valid` will have extra properties, our CSS will look something like this:
 
 ```css
-.Search-box-input[data-dirty],
-.Search-box-input[data-valid] { 
+.search-box-input[data-dirty],
+.search-box-input[data-valid] { 
   /* Shared styling */
 }
 
-.Search-box-input[data-dirty] {
+.search-box-input[data-dirty] {
   /* Specific to state styling */
 }
 ```
